@@ -15,7 +15,7 @@ export function Sobre() {
                         <h3 className="text-2xl font-semibold">Desenvolvedor aficionado tanto pelo <span className="text-primary">Back-end</span> quanto pelo <span className="text-primary">Front-end</span>  </h3>
 
                         <p className="text-muted-foreground">
-                            Com experiência em criar e implementar soluções para seviços e aplicações Web,
+                            Com experiência em criar e implementar soluções para serviços e aplicações Web,
                             acredito que além da importância do bom funcionamento e segurança de um sistema, é essencial
                             termos uma interface limpa, responsiva e de fácil utilização para o usuário.
                         </p>
