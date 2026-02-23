@@ -1,4 +1,5 @@
 import { CodeXml, MessageSquareCode, NotebookIcon } from "lucide-react";
+import GithubLogo from "/github.svg";
 
 
 export function About() {
@@ -31,7 +32,7 @@ export function About() {
                             
                             <div className="button bg-zinc-700 flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                                 <a href="https://github.com/rubensmneto96" >My Github</a>
-                                <img width="32" height="32" src="src/assets/github.svg" alt="" />
+                                <img width="32" height="32" src={GithubLogo} alt="" />
                             </div>
                         </div>
                     </div>

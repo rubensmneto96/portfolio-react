@@ -1,4 +1,6 @@
 import { ArrowDown } from 'lucide-react';
+import fotoPerfil from '/foto_perfil.jpg';
+import fotoAnimated from '/foto_animated.gif'
 
 export function Rubens () {
 
@@ -33,8 +35,8 @@ export function Rubens () {
 
 			<div className="container max-w-6xl mx-auto text-center z-10 px-4">
 				<div ref={imgChange} id="foto" className="opacity-0 animate-fade-in flex flex-col p-2 items-center md:object-top relative">
-					<img id="foto_perfil" src="src/assets/foto_perfil.jpg" className="rounded-full py-1 size-auto absolute"></img>
-					<img id="foto_animated" src="src/assets/foto_animated.gif" className="rounded-full py-1 size-auto"></img>
+					<img id="foto_perfil" src={fotoPerfil} className="rounded-full py-1 size-auto absolute"></img>
+					<img id="foto_animated" src={fotoAnimated} className="rounded-full py-1 size-auto"></img>
 				</div>
 
 				<div className="space-y-6 p-2">
