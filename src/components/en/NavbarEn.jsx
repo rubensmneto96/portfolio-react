@@ -18,18 +18,22 @@ export function NavbarEn() {
 	const logo = useRef(null);
 
 	useEffect(() => {
-		const scrollHandle = () => {
-			setScrolled(window.screenY > 10);
-		}
+		const handleScroll = () => {
+			if (window.scrollY > 10) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
 
-		window.addEventListener("scroll", scrollHandle);
-		return () => window.removeEventListener("scroll", scrollHandle);
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	useEffect(() => {
 	    var typedLogo = new Typed(logo.current, {
-	      strings: [">RMN"],
-	      typeSpeed: 70,
+	      strings: ["RMN"],
+	      typeSpeed: 140,
 	      showCursor: false,
 	    });
 
@@ -46,6 +50,7 @@ export function NavbarEn() {
 		>
 			<div className="container flex items-center justify-between">
 				<a className="text-xl font-bold text-primary flex items-center" href="#about">
+					<span className="text-slate-200 animate-fade-in"> &gt; </span>
 					<span className="relative z-10">
 						<span ref={logo} className="logo text-glow"></span>
 					</span>
