@@ -1,0 +1,9 @@
+{
+    "applications": {
+        "routing": [
+            {
+                "paths": ["/", "/en"]
+            }
+        ]
+    }
+}
