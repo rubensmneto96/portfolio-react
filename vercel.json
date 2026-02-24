@@ -1,8 +1,8 @@
 {
   "rewrites": [
     { 
-        "source": "/:path((?!en/).*)", 
-        "destination": "/en/:path" 
+        "source": "/(.*)", 
+        "destination": "index.html" 
     }
   ]
 }
