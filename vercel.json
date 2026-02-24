@@ -1,8 +1,8 @@
 {
     "redirects": [
         {
-            "source" : "/en",
-            "destination" : "/en/components"
+            "source" : "/",
+            "destination" : "/en"
         }
     ]
 }
